@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171713">
+  <meta name="description" content="Lamia Fashion House — curated fashion for everyday elegance.">
+  <title>Lamia Fashion House | Premium Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">নতুন কালেকশনে স্বাগতম · বাংলাদেশজুড়ে ডেলিভারি</div>
+  <header class="site-header">
+    <button class="icon-button menu-toggle" id="menuToggle" aria-label="মেনু">☰</button>
+    <a class="brand" href="#" aria-label="Lamia Fashion House home">
+      <span class="brand-mark">L<span>F</span>H</span>
+      <span class="brand-copy"><strong>LAMIA</strong><small>FASHION HOUSE</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#shop" data-category="সব">সব পণ্য</a>
+      <a href="#shop" data-category="নারী">নারী</a>
+      <a href="#shop" data-category="পুরুষ">পুরুষ</a>
+      <a href="#shop" data-category="অ্যাক্সেসরিজ">অ্যাক্সেসরিজ</a>
+      <a href="#story">আমাদের গল্প</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="সার্চ">⌕</button>
+      <button class="icon-button cart-trigger" id="cartToggle" aria-label="কার্ট">♧ <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <section class="search-strip hidden" id="searchStrip">
+    <label for="searchInput">আপনার পণ্য খুঁজুন</label>
+    <input id="searchInput" type="search" placeholder="যেমন: কুর্তি, শার্ট, ব্যাগ…">
+    <button class="text-button" id="closeSearch">বন্ধ করুন</button>
+  </section>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW SEASON · 2026</p>
+        <h1>Style that feels<br><em>like you.</em></h1>
+        <p class="hero-bn">নিজের মতো করে সাজুন। প্রতিদিনের সৌন্দর্যে যোগ হোক আভিজাত্য।</p>
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#shop">কালেকশন দেখুন <span>↗</span></a>
+          <a class="button button-quiet" href="#story">আমাদের গল্প</a>
+        </div>
+        <div class="hero-note"><span class="gold-line"></span> Carefully selected. Made to be loved.</div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85" alt="" id="heroImage" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85'">
+        <div class="hero-stamp"><span>LFH</span><small>THE ART OF<br>EVERYDAY STYLE</small></div>
+        <div class="hero-caption">NEW COLLECTION <span>01 / 03</span></div>
+      </div>
+    </section>
+
+    <section class="trust-row" aria-label="শপিং সুবিধা">
+      <div><span class="trust-icon">✦</span><span><b>কিউরেটেড কালেকশন</b><small>বাছাই করা স্টাইল</small></span></div>
+      <div><span class="trust-icon">◇</span><span><b>সহজ অর্ডার</b><small>মোবাইল-ফ্রেন্ডলি শপিং</small></span></div>
+      <div><span class="trust-icon">⌂</span><span><b>বাংলাদেশজুড়ে</b><small>ডেলিভারি সুবিধা</small></span></div>
+      <div><span class="trust-icon">♡</span><span><b>যত্নে প্যাকেজিং</b><small>প্রতিটি অর্ডারে যত্ন</small></span></div>
+    </section>
+
+    <section class="section category-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIND YOUR STYLE</p><h2>Shop by <em>category</em></h2></div>
+        <p>আপনার পছন্দের স্টাইল, এক জায়গায়।</p>
+      </div>
+      <div class="category-grid">
+        <button class="category-card cat-women" data-pick="নারী"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="নারীদের ফ্যাশন"><span>01 / WOMEN</span><b>নারী কালেকশন <i>↗</i></b></button>
+        <button class="category-card cat-men" data-pick="পুরুষ"><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=80" alt="পুরুষদের ফ্যাশন"><span>02 / MEN</span><b>পুরুষ কালেকশন <i>↗</i></b></button>
+        <button class="category-card cat-accessories" data-pick="অ্যাক্সেসরিজ"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="ফ্যাশন অ্যাক্সেসরিজ"><span>03 / DETAILS</span><b>অ্যাক্সেসরিজ <i>↗</i></b></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE EDIT</p><h2>Our <em>favourites</em></h2></div>
+        <p>আপনার প্রতিদিনের জন্য বেছে নেওয়া কিছু প্রিয় পণ্য।</p>
+      </div>
+      <div class="shop-toolbar">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="সব">সব পণ্য</button>
+          <button class="filter-tab" data-filter="নারী">নারী</button>
+          <button class="filter-tab" data-filter="পুরুষ">পুরুষ</button>
+          <button class="filter-tab" data-filter="অ্যাক্সেসরিজ">অ্যাক্সেসরিজ</button>
+        </div>
+        <label class="sort-label">সাজান
+          <select id="sortSelect"><option value="featured">বাছাই করা</option><option value="low">দাম: কম থেকে বেশি</option><option value="high">দাম: বেশি থেকে কম</option></select>
+        </label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state hidden" id="emptyState">এই অনুসন্ধানে কোনো পণ্য পাওয়া যায়নি। অন্য কিছু খুঁজে দেখুন।</p>
+    </section>
+
+    <section class="editorial">
+      <div class="editorial-image"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="ফ্যাশন এডিটোরিয়াল"></div>
+      <div class="editorial-copy"><p class="eyebrow">LESS, BUT BETTER</p><h2>Thoughtful style.<br><em>Timeless feeling.</em></h2><p>ট্রেন্ডের বাইরে, আপনার নিজস্ব স্টাইলের পাশে। এমন পণ্য বেছে নিন যা আপনার প্রতিদিনকে আরও আত্মবিশ্বাসী করে তোলে।</p><a class="button button-dark" href="#shop">পছন্দের পণ্য দেখুন <span>↗</span></a></div>
+    </section>
+
+    <section class="section story-section" id="story">
+      <p class="eyebrow">A LITTLE ABOUT US</p>
+      <h2>Fashion is personal.<br><em>Make it yours.</em></h2>
+      <p>Lamia Fashion House-এ আমরা বিশ্বাস করি, সুন্দর স্টাইল মানে নিজের স্বাচ্ছন্দ্য ও ব্যক্তিত্বকে প্রকাশ করা। আমাদের কালেকশন ধীরে ধীরে বাড়বে—আপনার মতামত ও পছন্দকে সঙ্গে নিয়ে।</p>
+      <a href="#shop" class="underlined-link">কালেকশন এক্সপ্লোর করুন ↗</a>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">STAY IN THE LOOP</p><h2>নতুন কালেকশনের খবর<br><em>সবার আগে পান।</em></h2></div>
+      <form id="newsletterForm"><label for="newsletterEmail">ইমেইল ঠিকানা</label><div class="newsletter-input"><input id="newsletterEmail" type="email" placeholder="আপনার ইমেইল" required><button type="submit" aria-label="সাবস্ক্রাইব">→</button></div><small id="newsletterMessage">এটি ডেমো সাবস্ক্রিপশন ফর্ম।</small></form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><a class="brand brand-light" href="#"><span class="brand-mark">L<span>F</span>H</span><span class="brand-copy"><strong>LAMIA</strong><small>FASHION HOUSE</small></span></a><p>Everyday elegance, thoughtfully chosen.</p></div>
+    <div><b>শপিং</b><a href="#shop">সব পণ্য</a><a href="#shop" data-footer-category="নারী">নারী</a><a href="#shop" data-footer-category="পুরুষ">পুরুষ</a></div>
+    <div><b>কাস্টমার কেয়ার</b><a href="#policies">ডেলিভারি নীতি</a><a href="#policies">রিটার্ন ও এক্সচেঞ্জ</a><a href="#policies">যোগাযোগ</a></div>
+    <div class="footer-bottom" id="policies"><span>© <span id="year"></span> Lamia Fashion House</span><span>Made for Bangladesh · Prices in BDT (৳)</span></div>
+  </footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="শপিং কার্ট" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>আপনার কার্ট</h2></div><button class="icon-button" id="closeCart" aria-label="কার্ট বন্ধ করুন">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary"><div><span>সাবটোটাল</span><strong id="cartSubtotal">৳০</strong></div><small>ডেলিভারি চার্জ ঠিকানা অনুযায়ী নিশ্চিত করা হবে।</small><button class="button button-dark full-button" id="checkoutButton">অর্ডার সম্পন্ন করুন <span>↗</span></button><button class="text-button continue-shopping" id="continueShopping">শপিং চালিয়ে যান</button></div>
+  </aside>
+
+  <div class="modal hidden" id="productModal" role="dialog" aria-modal="true" aria-label="পণ্যের বিবরণ">
+    <button class="modal-close icon-button" id="closeProductModal" aria-label="বন্ধ করুন">×</button>
+    <div id="productModalContent"></div>
+  </div>
+
+  <div class="modal checkout-modal hidden" id="checkoutModal" role="dialog" aria-modal="true" aria-label="অর্ডার ফর্ম">
+    <button class="modal-close icon-button" id="closeCheckout" aria-label="বন্ধ করুন">×</button>
+    <p class="eyebrow">ALMOST YOURS</p><h2>অর্ডারের তথ্য</h2>
+    <p class="modal-intro">আপনার ডেলিভারি তথ্য দিন। এটি একটি প্রোটোটাইপ—এই অর্ডার শুধু এই ব্রাউজারে ডেমো হিসেবে সংরক্ষিত হবে।</p>
+    <form id="checkoutForm" class="checkout-form">
+      <label>আপনার নাম<input name="name" required minlength="2" placeholder="সম্পূর্ণ নাম"></label>
+      <label>মোবাইল নম্বর<input name="phone" required inputmode="tel" pattern="(\+?88)?01[3-9][0-9]{8}" placeholder="01XXXXXXXXX"></label>
+      <label>বিভাগ<select name="division" required><option value="">বিভাগ নির্বাচন করুন</option><option>ঢাকা</option><option>চট্টগ্রাম</option><option>রাজশাহী</option><option>খুলনা</option><option>বরিশাল</option><option>সিলেট</option><option>রংপুর</option><option>ময়মনসিংহ</option></select></label>
+      <label>সম্পূর্ণ ঠিকানা<textarea name="address" required minlength="8" placeholder="বাসা/রোড, এলাকা, জেলা"></textarea></label>
+      <label>অতিরিক্ত নির্দেশনা (ঐচ্ছিক)<textarea name="note" placeholder="ডেলিভারি সংক্রান্ত কোনো নির্দেশনা"></textarea></label>
+      <div class="payment-choice"><span>পেমেন্ট পদ্ধতি</span><label><input type="radio" name="payment" value="ক্যাশ অন ডেলিভারি" checked> ক্যাশ অন ডেলিভারি (COD)</label></div>
+      <div class="checkout-total"><span>মোট পণ্যমূল্য</span><strong id="checkoutTotal">৳০</strong></div>
+      <button type="submit" class="button button-dark full-button">ডেমো অর্ডার নিশ্চিত করুন <span>↗</span></button>
+    </form>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
